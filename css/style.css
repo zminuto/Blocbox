@@ -21,31 +21,6 @@ p {
 }
 
 /* GRID */
-@media (min-width: 768px) {
-   .container {
-     width: 750px;
-   }
- }
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
- }
- @media (min-width: 1200px) {
-   .container {
-     width: 1170px;
-   }
- }
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -53,20 +28,44 @@ p {
   padding-right: 15px;
   position: relative;
 }
-.container: before,
-.container: after {
+.container:before,
+.container:after {
   content: " ";
   display: table;
 }
 .container:after {
-  clear:both;
+  clear: both;
 }
 .one-half, .one-third, .one-fourth {
-  width: 96%;
-  float: left;
-  position: relative;
+  width:96%;
+  float:left;
+  position:relative;
   min-height: 1px;
-  margin: 0 2% 20px;
+  margin:0 2% 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width:46%;
+  }
+  .one-third {
+    width:29.33333%;
+  }
+  .one-fourth {
+    width:21%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -74,10 +73,6 @@ p {
   header {
     background-color: #e2e2e2;
     background-image: none;
-  }
-  header nav ul > li {
-    display: run-in;
-    float: none;
   }
 }
 
@@ -114,11 +109,14 @@ header nav {
    font: Montserrat, Arial, sans-serif;
    font-size: 14px;
  }
- header nav ul > li.btn-outline:hover > a {
-   color:#34495E;
+ header nav ul > li.btn2:hover > a {
+   color:#979797;
  }
  header nav ul > li.btn2 {
    position: center;
+ }
+ header nav ul > li > a:hover {
+   color: #979797
  }
  header .hero {
    text-align: center;
@@ -154,10 +152,26 @@ header nav {
 }
 .btn2 {
   border-radius: 4px;
-  color:#FFFFFF;
+  color:#333333;
   font-weight: 700;
   text-decoration: none;
   padding:10px 30px;
   background: none;
   border: 2px solid #333333;
+}
+.btn:hover {
+  background-color: #DBAC60;
+  border-color: #DBAC60;
+  box-shadow: 0px 2px 0px 0px #E29D2D;
+}
+.btn2:hover {
+    border-radius: 4px;
+    color:#979797;
+    font-weight: 700;
+    text-decoration: none;
+    padding:10px 30px;
+    background: none;
+    border: 2px solid;
+    border-color: #979797;
+  }
 }
