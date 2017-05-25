@@ -69,6 +69,19 @@ p {
   margin: 0 2% 20px;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  header {
+    background-color: #e2e2e2;
+    background-image: none;
+  }
+  header nav ul > li {
+    display: run-in;
+    float: none;
+  }
+}
+
+
 /* HEADER */
 header {
   color:#333333;
@@ -82,7 +95,7 @@ header nav {
    padding:1em 0;
  }
  header nav ul {
-   display:inline;
+   display: inline;
    text-align: right;
    float:right;
    margin:0;
