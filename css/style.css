@@ -489,6 +489,7 @@ header nav {
   background:#34495E;
   display:block;
   text-align: center;
+  width: 100%;
 }
 .left-nav .items {
   padding:0 6%;
@@ -525,11 +526,11 @@ header nav {
 .left-nav .settings {
    position:fixed;
    background:#22303E;
-   width:220px;
    bottom:0;
    left:0;
    right:0;
    padding:10px 0;
+   height: 50px;
  }
  .left-nav .settings img {
    height:35px;
@@ -556,6 +557,9 @@ header nav {
  .left-nav .active {
    background-color: #34495E;
    color: E29D2D;
+ }
+ .left-nav .menu-up {
+   margin-left: 15px;
  }
 
 
